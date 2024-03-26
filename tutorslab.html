@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutors Lab</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<style>
+ #whiteboard {
+        width: 600px;
+        height: 400px;
+        border: 1px solid #000;
+    }
+.schedule {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.day {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+#rd{
+    font-size: 25px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#wd{
+ margin-left: 50px;
+ width: 800px;
+ height: 400px;
+}
+#sp{
+margin-left: 50px;
+width: 1000px;
+ height: 200px;
+ margin-bottom: 50px;
+ color: #000;
+}
+#ft{
+    text-align: center;
+
+}
+table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+</style>
+</head>
+<body style="background-color:rgb(119, 169, 223)">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="rd">EduGo</div>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html" target="_blank">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tutorprofile.html"target="_blank">Profile Page</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Tutors</a>
+                    </li>
+                </ul>
+            
+        </nav>
+
+    <main class="container">
+<!-- Whiteboard section -->
+<h3>WhiteBoard For Tutor</h3>
+<div class="card" id="wd">
+        <section id="wd">
+            <h2>Whiteboard</h2>
+        </section>
+</div>
+<!-- Schedule Planner section -->
+<h3>Schedule Planner For Tutor</h3>
+<div class="col-md-6" id="sp">
+        <section id="sp">
+            <h2>Schedule Planner:</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th></th> 
+                        <th>Monday</th>
+                        <th>Tuesday</th>
+                        <th>Wednesday</th>
+                        <th>Thursday</th>
+                        <th>Friday</th>
+                        <th>Saturday</th>
+                        <th>Sunday</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>9:00 AM</td>
+                        <td>Maths</td>
+                        <td>Algebraic Topology</td>
+                        <td></td>
+                        <td>Project</td>
+                        <td>Doubts Clearing Sessions</td>
+                        <td>Relax</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>10:00 AM</td>
+                        <td>Work</td>
+                        <td>Discrete Mathematics</td>
+                        <td></td>
+                        <td></td>
+                        <td>Work</td>
+                        <td>Dealing with Functions</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+</div>
+    </main>
+ <footer id="ft">
+    <div class="card">
+        <div class="col-md-12">
+            <h4>TutorLab</h4>
+            <p>Tutor Lab is designed for tutors to make the most use of our platform
+                in providing efficient education aka tutoring students.It includes
+                Whiteboard and a Schedule Planner to begin with.
+            </p>
+        </div>
+    </div>
+ </footer>  
+ <script>
+    
+ </script>
+</body>
+</html>

@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tutor Profile</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/bootstrap.min.css"> 
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<style>
+  .sidebar {
+      height: 2000px;
+      width: 250px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: #416ecf;
+      padding-top: 20px;
+  }
+  .sidebar a {
+      padding: 15px 25px;
+      text-align: left;
+      text-decoration: none;
+      font-size: 18px;
+      color: white;
+      display: block;
+  }
+  .sidebar a:hover {
+      background-color: #0c32c6;
+  }
+
+  .content {
+      margin-left: 250px;
+      padding: 20px;
+  }
+  #head{
+    color: rgb(11, 105, 246);
+    text-align: center;
+  }
+  #lb{
+    text-align: center;
+    margin-left: 250px;
+  }
+  #score{
+    margin-left: 290px;
+  }
+  #s{
+    margin-left: 30px;
+  }
+  #sb{
+    margin-left: 70px;
+    text-align: center;
+  }
+  #ff{
+    margin-top: 90px;
+    margin-left: 290px;
+    text-align: center;
+  }
+  @keyframes text-animation {
+            0% {
+                transform: scale(1); 
+                opacity: 1; 
+            }
+            50% {
+                transform: scale(1.2); 
+                opacity: 0.5; 
+            }
+            100% {
+                transform: scale(1); 
+                opacity: 1; 
+            }
+        }
+.ptext {
+    animation-name: text-animation;
+    animation-duration: 3s; 
+    animation-timing-function: ease-in-out; 
+    animation-iteration-count: infinite;
+}
+
+#why{
+  margin-bottom: 0px;
+  text-align: center;
+}
+table {
+ border-collapse: collapse;
+ width: 80%;
+ margin: 20px auto;
+}        
+th, td {
+border: 1px solid #ccc;
+padding: 8px;
+text-align: left;
+    }
+th {
+    background-color: #f2f2f2;
+    }
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+    }
+caption {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin: 10px auto;
+    }
+#mes{
+    margin-left:390px;
+    margin-bottom: 40px;
+}
+#vc{
+    text-align: left;
+    margin-left: 250px;
+    margin-bottom: 40px;
+
+}
+.custom-btn {
+transition: transform 0.2s; 
+}
+.custom-btn:hover {
+    transform: scale(1.1); 
+}
+</style>
+</head>
+<body>
+  <div class="sidebar">
+    <h2 id="head"><a href="index.html">EduGo</a></h2>
+    <a href="#">Available Tutors</a>
+    <a href="#">Courses Offered</a>
+    <a href="studentscorner.html">Students Corner</a>
+    <a href="#why">Why EduGo?</a>
+</div>
+<div class="content">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary" id="nav">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <img src="person-chalkboard-solid.png.png" alt="icon" width="60px" height="50px">
+      <div class="search-button" id="sb">
+        <input type="text" placeholder="Search Tutors,Topics...">
+        <span class="search-icon">&#128269;</span>
+    </div>
+    <div class="col md-6">
+        <button class="btn-primary">Tutor Labs</button>
+    </div>
+      <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Resources</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Courses</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Tutors</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">About</a>
+              </li>
+          </ul>
+      </div>
+  </nav>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h1>Tutor Profile</h1>
+      </div>
+    </div>
+  <!--Student Info-->
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header">
+            Tutor Information
+          </div>
+          <div class="card-body">
+            <ul class="list-group">
+              <li class="list-group-item">Name: </li>
+              <li class="list-group-item">Email: </li>
+              <li class="list-group-item">Phone Number: </li>
+              <li class="list-group-item">School/Institution Name: </li>
+              <li class="list-group-item">Qualification: </li>
+              <li class="list-group-item">Field of Interest: </li>
+              <li class="list-group-item">Grade/Course: </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    <!--Progress Tracker-->
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header">
+            Progress Tracker
+          </div>
+          <div class="card-body">
+            <h5>Course Name:</h5>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+          <div class="card-body">
+            <h5>Course Name:</h5>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 65%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+          <div class="card-body">
+            <h5>Course Name:</h5>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 20%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+          <div class="card-body">
+            <h5>Course Name:</h5>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 45%" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><br><br>
+  <!--Scoreboard-->
+  <div class="row" id="score">
+  <div class="col-md-6">
+      <div class="card-header">
+        <h5>Score</h5>
+        <label>Your Score:</label>
+       <input type="text" size="25" id="s"><br>
+       <label>Global Rank:</label>
+       <input type="number" size="3" id="s">
+       <h6>Tip:</h6><p>Teach the fun way and earn more points!</p>
+        </div></div></div>
+  <!--Schedule-->
+  <div class="row" id="ff">
+    <div class="col-md-6">
+        <div class="card-header">
+          <h5 class="ptext">Today's Schedule</h5>
+          <table>
+            <thead>
+                <tr>
+                    <th>Time</th>
+                    <th>Activity</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>09:00 AM</td>
+                    <td>Mathematics</td>
+                </tr>
+                <tr>
+                    <td>10:30 AM - 11:00 AM</td>
+                    <td>Break</td>
+                </tr>
+                <tr>
+                    <td>11:00 AM - 12:00 PM</td>
+                    <td>Statistics for Class 11</td>
+                </tr>
+                <tr>
+                    <td>02:00 PM</td>
+                    <td>Video Lecture on Discrete Mathematics and Algebraic Topology</td>
+                </tr>
+                <tr>
+                    <td>05:30 PM - 7:00 PM</td>
+                    <td>Doubts Clearing Session</td>
+                </tr>
+            </tbody>
+        </table>
+          </div></div></div>
+  <!--LeaderBoard-->
+  <div class="col-md-6" id="lb">
+    <h3>LeaderBoard</h3>
+    <table class="table table-dark table-hover">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">First Name</th>
+          <th scope="col">Last Name</th>
+          <th scope="col">Score</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>100</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Jacob</td>
+          <td>Thornton</td>
+          <td>98</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td colspan="2">Larry</td>
+          <td>95</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="col-md-6" id="mes">
+    <label>Check out Messages!:</label>
+    <button class="btn btn-primary custom-btn">Messages</button>
+</div>
+<div class="col-md-6" id="vc">
+    <label>Create New Meetings for better tutoring!</label>
+    <button class="btn btn-primary custom-btn">Create a Meeting</button>
+</div>
+  <footer class="footer">
+    <div class="col-md-12">
+      <div class="card-header">
+    <h4 id="why">Why EduGo?</h4>
+    <p id="why">EduGo is an online personalized learning/tutoring tool that enables students and tutors to
+      communicate with each others for a better future.It is enabled with video call facility and Student Corner
+      to develop as a community around the nation/world.It includes Tutors across the nation to connect with 
+      students for a better personalized learning tool.
+    </p>
+    </div></div>
+  </footer>
+  <script>
+    function toggleNavbar() {
+        var navbar = document.querySelector('.navbar-collapse');
+        if (navbar.classList.contains('show')) {
+            navbar.classList.remove('show');
+        } else {
+            navbar.classList.add('show');
+        }
+    }
+
+    var navbarToggle = document.querySelector('.navbar-toggler');
+    navbarToggle.addEventListener('click', toggleNavbar);
+</script>
+
+</body></html>

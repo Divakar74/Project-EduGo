@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduGo</title>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        body {
+            color: black;
+        }
+        #cards{
+            margin-left: 250px;
+            
+        }
+        .navbar {
+            background-color: #007bff; 
+        }
+
+        #header {
+            color: white;
+            width: 100%;
+        }
+
+        #lg {
+            background-color: #007bff;
+        }
+
+        .jumbotron {
+            text-align: center;
+            background-color: #f8f9fa;
+        }
+
+        .course-card {
+            margin-top: 20px;
+            border: none;
+            height:290px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        #feed {
+            color: black; 
+        }
+
+        #feedback-popup {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: 999;
+        }
+
+        .feedback-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (max-width: 768px) {
+            .navbar .container-fluid {
+                padding-right: 0;
+            }
+
+            .navbar-toggler {
+                margin-right: 15px;
+            }
+
+            #header {
+                text-align: center;
+            }
+
+            #lg {
+                display: block;
+                margin: 10px auto;
+            }
+
+            .course-card {
+                margin-top: 0;
+            }
+        }
+.card {
+    border-radius: 10px; 
+    margin-top: 20px; 
+}
+
+.card-title {
+    font-size: 24px; 
+}
+.newsletter-card {
+            max-width: 400px;
+            margin: 0 auto;
+            margin-top: 50px;
+            padding: 20px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .newsletter-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .newsletter-description {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+#news
+{
+    color: black;
+}
+#foot{
+  margin-top: 170px;
+  height: 300px;
+  width: 100%;
+}
+#feed{
+  color: black;
+}
+
+</style>
+</head>
+<body>
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-primary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Home</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Resources</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#course">Courses</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Tutors</a>
+                </li>
+            </ul>
+        </div>
+        <h5 id="header">EduGo</h5>
+        <button type="button" class="btn btn-info" id="lg"><a href="Login.html" target="_blank">Login</a></button>
+        <button type="button" class="btn btn-info" id="lg"><a href="tutororstu.html" target="_blank">SignUp</a></button>
+    </div>
+</nav>
+
+<!-- Jumbotron Header -->
+<div class="jumbotron text-center">
+    <h1 class="display-4">Happy Learning!</h1>
+    <p class="lead">Education is the manifestation of perfection already in Man</p>
+</div>
+<h4 id="co">Best Tutors</h4>
+
+<!-- Card Section for Tutors -->
+<div class="container mt-5" id="cards">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col-md-4">
+            <div class="card course-card">
+                <div class="card-body">
+                    <h5 class="card-title" id="feed">Dr.Ram</h5>
+                    <p class="card-text" id="feed" style="color: #376494;">Years of Experience: 5 years
+                        Field of Excellence: Biology 
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card course-card">
+                <div class="card-body">
+                    <h5 class="card-title" id="feed">Mr.Ahamed</h5>
+                    <p class="card-text" id="feed" style="color: #376494;">Years of Experience: 7 years
+                        Field of Excellence: Computer Science </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card course-card">
+                <div class="card-body">
+                    <h5 class="card-title" id="feed">Mr.Karthick</h5>
+                    <p class="card-text" id="feed" style="color: #376494;">Years of Experience: 2 years
+                        Field of Excellence: Chemistry </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><br><br>
+<br><br><br><br><br><br>
+<!-- Courses Offered -->
+<h4 id="co">Courses Offered</h4>
+
+<!-- Card Section for Courses -->
+<div class="container mt-5" id="cards">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col-md-4">
+            <div class="card course-card">
+                <div class="card-body">
+                    <h5 class="card-title" id="feed">Fundamentals of Computer Science</h5>
+                    <p class="card-text" id="feed">This course covers basics of computer science and provides
+                        students with a clear and concise concept delivery provided by best teachers in the town.
+                    </p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card course-card">
+                <div class="card-body">
+                    <h5 class="card-title" id="feed">Algebraic Topology</h5>
+                    <p class="card-text" id="feed">Jump into the world of Algebraic Topology and get a 
+                        good grasp over the concepts with our best teachers.
+                    </p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card course-card">
+                <div class="card-body">
+                    <h5 class="card-title" id="feed">Human Evolution</h5>
+                    <p class="card-text" id="feed">Wanna know more about Evolution!
+                        Learn with Darwin and his research results.
+                    </p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><br><br><br><br><br><br><br><br><br><br><br><br>
+<!-- Join as Tutor Container -->
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card border-secondary"> 
+                <div class="card-body">
+                    <h5 class="card-title" style="color: black;">Wanna join as Tutor?</h5>
+                    <button class="btn btn-info" id="joinAsTutorBtn">Join as Tutor</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Feedback Form Button -->
+<button class="btn btn-primary" id="feedbackBtn">Give Feedback</button>
+
+<!-- Feedback Form Pop-up -->
+<div id="feedback-popup">
+    <div class="feedback-container">
+        <h3 class="text-center" id="feed">Feedback Form</h3>
+        <form>
+            <div class="form-group">
+                <label for="name" id="feed">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="email" id="feed">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="feedback" id="feed">Feedback</label>
+                <textarea class="form-control" id="feedback" rows="4" placeholder="Enter your feedback" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Submit Feedback</button>
+        </form>
+    </div>
+</div>
+<!-- Newsletter Card Container -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card newsletter-card">
+                    <div class="card-body"id=news>
+                        <h2 class="newsletter-title">Latest News</h2>
+                        <p class="newsletter-description">
+                            Stay up to date with latest Educational news. Don't miss out!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- Footer -->
+<footer class="footer" id="foot">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h5>Courses Offered</h5>
+                <ul class="course-list">
+                    <li>Course 1</li>
+                    <li>Course 2</li>
+                    <li>Course 3</li>
+                    <li>Course 4</li>
+                    <li>Course 5</li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h5>Quick Links</h5>
+                <ul class="course-list">
+                    <li><a>Algebraic Topology</a></li>
+                    <li><a>Fundamentals of Computer Science</a></li>
+                    <li><a>Discrete Mathematics</a></li>
+                    <li><a>Evolution of Mankind</a></li>
+                    <li><a>Physical Chemistry</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h5>Contact Us</h5>
+                <ul class="course-list">
+                    <li>Email</li>
+                    <li>Phone Number</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // Smooth Scrolling
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+
+    // Form validation
+    document.querySelector('form').addEventListener('submit', function(event) {
+        const name = document.querySelector('#name').value;
+        const email = document.querySelector('#email').value;
+        const feedback = document.querySelector('#feedback').value;
+
+        if (name.trim() === '' || email.trim() === '' || feedback.trim() === '') {
+            alert('Please fill in all the fields.');
+            event.preventDefault(); // Prevent form submission
+        }
+    });
+
+    // Show/hide feedback form pop-up
+    const feedbackBtn = document.getElementById('feedbackBtn');
+    const feedbackPopup = document.getElementById('feedback-popup');
+    feedbackBtn.addEventListener('click', function() {
+        feedbackPopup.style.display = 'block';
+    });
+
+    // Close feedback form pop-up
+    document.addEventListener('click', function(event) {
+        if (event.target === feedbackPopup) {
+            feedbackPopup.style.display = 'none';
+        }
+    });
+
+    // Modal dialog as tutor
+    const joinAsTutorBtn = document.getElementById('joinAsTutorBtn');
+    joinAsTutorBtn.addEventListener('click', function() {
+        // Show a modal dialog here, or navigate to a signup page
+        alert('You clicked the "Join as Tutor" button.');
+    });
+</script>
+</body>
+</html>

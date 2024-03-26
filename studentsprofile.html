@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Profile</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<style>
+
+  .sidebar {
+      height: 1500px;
+      width: 250px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: #416ecf;
+      padding-top: 20px;
+  }
+  .sidebar a {
+      padding: 15px 25px;
+      text-align: left;
+      text-decoration: none;
+      font-size: 18px;
+      color: white;
+      display: block;
+  }
+  .sidebar a:hover {
+      background-color: #0c32c6;
+  }
+
+  .content {
+      margin-left: 250px;
+      padding: 20px;
+  }
+  #head{
+    color: rgb(11, 105, 246);
+    text-align: center;
+  }
+  #lb{
+    text-align: center;
+    margin-left: 250px;
+  }
+  #score{
+    margin-left: 290px;
+  }
+  #s{
+    margin-left: 30px;
+  }
+  #sb{
+    margin-left: 70px;
+    text-align: center;
+  }
+  #ff{
+    margin-top: 90px;
+    margin-left: 290px;
+    text-align: center;
+  }
+  @keyframes text-animation {
+            0% {
+                transform: scale(1); 
+                opacity: 1; 
+            }
+            50% {
+                transform: scale(1.2); 
+                opacity: 0.5; 
+            }
+            100% {
+                transform: scale(1); 
+                opacity: 1; 
+            }
+        }
+.ptext {
+    animation-name: text-animation;
+    animation-duration: 3s; /* Animation duration (3 seconds in this example) */
+    animation-timing-function: ease-in-out; /* Easing function for smooth animation */
+    animation-iteration-count: infinite; /* Repeat the animation infinitely */
+}
+#why1{
+  text-align: center;
+}
+#img{
+  margin-left: 55px;
+}
+</style>
+</head>
+<body>
+  <div class="sidebar">
+    <h2 id="head"><a href="index.html">EduGo</a></h2>
+    <img src="icons8-graduation-hat-60.png" alt="hat" id="img">
+    <h6 id="img">Logout</h6>
+    <a href="#">Available Tutors</a>
+    <a href="#">Courses Offered</a>
+    <a href="#">Students Corner</a>
+    <a href="#why">Why EduGo?</a>
+</div>
+<div class="whole">
+<div class="content">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <img src="person-chalkboard-solid.png.png" alt="icon" width="60px" height="50px">
+      <div class="search-button" id="sb">
+        <input type="text" placeholder="Search Tutors,Topics...">
+        <span class="search-icon">&#128269;</span>
+    </div>
+      <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Resources</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Courses</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Tutors</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">About</a>
+              </li>
+          </ul>
+      </div>
+  </nav>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h1>Student Profile</h1>
+      </div>
+    </div>
+  <!--Student Info-->
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header">
+            Student Information
+          </div>
+          <div class="card-body">
+            <ul class="list-group">
+              <li class="list-group-item">Name: </li>
+              <li class="list-group-item">Email: </li>
+              <li class="list-group-item">Phone Number: </li>
+              <li class="list-group-item">School/Institution Name: </li>
+              <li class="list-group-item">Grade/Course: </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    <!--Progress Tracker-->
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header">
+            Progress Tracker
+          </div>
+          <div class="card-body">
+            <h5>Subject Name:</h5>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+          <div class="card-body">
+            <h5>Subject Name:</h5>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 65%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+          <div class="card-body">
+            <h5>Subject Name:</h5>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 20%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+          <div class="card-body">
+            <h5>Subject Name:</h5>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 45%" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><br><br>
+  <!--Scoreboard-->
+  <div class="row" id="score">
+  <div class="col-md-6">
+      <div class="card-header">
+        <h5>Score</h5>
+        <label>Your Score:</label>
+       <input type="text" size="25" id="s"><br>
+       <label>Global Rank:</label>
+       <input type="number" size="3" id="s">
+       <h6>Tip:</h6><p>Learn the fun way by completing your assignments and earn more points!</p>
+        </div></div></div>
+  <!--Funfact-->
+  <div class="row" id="ff">
+    <div class="col-md-6">
+        <div class="card-header">
+          <h5 class="ptext">Fact Of the Day!</h5>
+         <p>When it comes to education, children in India have no choice but to go to school from age 6 to 14. This was introduced through the “Right to Education Act”, voted by the Indian Parliament in August 2009.
+          Since then, education has been steadily improving.
+           </p>
+          </div></div></div>
+  <!--LeaderBoard-->
+  <div class="col-md-6" id="lb">
+    <h3>LeaderBoard</h3>
+    <table class="table table-dark table-hover">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">First Name</th>
+          <th scope="col">Last Name</th>
+          <th scope="col">Score</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>100</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Jacob</td>
+          <td>Thornton</td>
+          <td>98</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td colspan="2">Larry</td>
+          <td>95</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <footer class="footer">
+    <div class="col-md-12">
+      <div class="card-header">
+    <h4 id="why1">Why EduGo?</h4>
+    <p id="why">EduGo is an online personalized learning/tutoring tool that enables students and tutors to
+      communicate with each others for a better future.It is enabled with video call facility and Student Corner
+      to develop as a community around the nation/world.It includes Tutors across the nation to connect with 
+      students for a better personalized learning tool.
+    </p>
+    </div></div>
+  </footer></div></div>
+  <script>
+function fetchStudentInfo() {
+  fetch('/api/student/profile') // Replace with your API endpoint
+    .then((response) => response.json())
+    .then((data) => {
+      document.getElementById('studentName').textContent = data.name;
+      document.getElementById('studentEmail').textContent = data.email;
+      document.getElementById('studentPhoneNumber').textContent = data.phoneNumber;
+      document.getElementById('schoolName').textContent = data.schoolName;
+      document.getElementById('gradeCourse').textContent = data.gradeCourse;
+    })
+    .catch((error) => {
+      console.error('Error fetching student data: ', error);
+    });
+}
+
+function fetchStudentScores() {
+  // Make an API request to fetch student scores
+  fetch('/api/student/scores') // Replace with your API endpoint
+    .then((response) => response.json())
+    .then((data) => {
+      const subjects = data.subjects;
+      subjects.forEach((subject, index) => {
+        const progressElement = document.getElementById(`progress-${index}`);
+        progressElement.style.width = subject.progress + '%';
+      });
+
+      document.getElementById('studentScore').value = data.score;
+
+      document.getElementById('globalRank').value = data.globalRank;
+    })
+    .catch((error) => {
+      console.error('Error fetching student scores: ', error);
+    });
+}
+
+window.onload = function () {
+  fetchStudentInfo();
+  fetchStudentScores();
+};
+</script>
+</body></html>
